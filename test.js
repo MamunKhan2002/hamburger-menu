@@ -273,4 +273,30 @@ const books = ['Bangla', 'Hindi', 'Math', 'English', 'javascript'];
 
 console.log(books.includes('javascript'));
 
+// ========Task Tour===------
+
+
+let points = [22, 3, 13, 53, 6, 1, 0, 63];
+
+const parsonName = ['Akash', 'Mamun', 'Modhu', 'Milon'];
+
+console.log(Array.isArray(points));
+console.log(Array.isArray(parsonName));
+
+
+// ======Task Five ==------
+
+const arr1 = [3, 43, 5, 66, 77, 32, 97];
+
+const myFriends = ['Milon', 'Akash', 'Modhu', 'Shawon'];
+
+const myFriendsGirl = ['Mitu', 'Mim', 'Sonia', 'Taniya'];
+
+const myAllFriends = myFriends.concat(myFriendsGirl, arr1);
+console.log(myAllFriends);
+console.log(arr1);
+console.log(myFriends);
+console.log(myFriendsGirl);
+
+
 
