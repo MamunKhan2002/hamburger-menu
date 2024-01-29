@@ -337,23 +337,40 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 // ==================================
 // ===Boolean condition====
 
-let regularBill = 500;
-let age = 65;
-let isPoor = !true;
-let bill;
+// let regularBill = 500;
+// let age = 55;
+// let isPoor = true;
+// let bill;
+
+// if (age < 18) {
+//     let discount = 500 * 25 / 100;
+//     bill = regularBill - discount;
+// } else if (age >= 60) {
+//     let discount = 500 * 50 / 100;
+//     bill = regularBill - discount;
+// } else if (isPoor) {
+//     let discount = 500 * 75 / 100;
+//     bill = regularBill - discount;
+// } else {
+//     bill = regularBill
+// }
+
+// console.log(bill);
 
 
-if (age < 18) {
-    let discount = 500 * 25 / 100;
-    bill = regularBill - discount;
-} else if (age >= 60) {
-    let discount = 500 * 50 / 100;
-    bill = regularBill - discount;
-} else if (isPoor) {
-    let discount = 500 * 75 / 100;
-    bill = regularBill - discount;
+let hour = 24;
+let greeting;
+
+if (hour <= 11 && hour >= 6) {
+    greeting = 'Good Morning!'
+} else if (hour >= 12 && hour <= 14) {
+    greeting = 'Good noon!'
+} else if (hour >= 15 && hour <= 17) {
+    greeting = ('Good Afternoon')
+} else if (hour > 17 && hour <= 19) {
+    greeting = ('Good Evening!')
 } else {
-    bill = regularBill
-}
+    greeting = ('Good Night!')
+};
 
-console.log(bill);
+console.log(greeting);
