@@ -315,21 +315,45 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 
  */
 
-let weight = 100;
-const height = 1.651 * 2;
-const BMI = weight / height;
-let value;
+// let weight = 100;
+// const height = 1.651 * 2;
+// const BMI = weight / height;
+// let value;
 
-if (BMI < 18.5) {
-    value = 'you are underweight.'
+// if (BMI < 18.5) {
+//     value = 'you are underweight.'
+// } else {
+//     if (BMI >= 18.5 && BMI <= 24.9) {
+//         value = 'you are normal.'
+//     } else if (BMI >= 25 && BMI <= 29.9) {
+//         value = 'you are overweight.'
+//     } else {
+//         value = 'you are obese.'
+//     }
+// };
+
+// console.log(value);
+
+// ==================================
+// ===Boolean condition====
+
+let regularBill = 500;
+let age = 65;
+let isPoor = !true;
+let bill;
+
+
+if (age < 18) {
+    let discount = 500 * 25 / 100;
+    bill = regularBill - discount;
+} else if (age >= 60) {
+    let discount = 500 * 50 / 100;
+    bill = regularBill - discount;
+} else if (isPoor) {
+    let discount = 500 * 75 / 100;
+    bill = regularBill - discount;
 } else {
-    if (BMI >= 18.5 && BMI <= 24.9) {
-        value = 'you are normal.'
-    } else if (BMI >= 25 && BMI <= 29.9) {
-        value = 'you are overweight.'
-    } else {
-        value = 'you are obese.'
-    }
-};
+    bill = regularBill
+}
 
-console.log(value);
+console.log(bill);
