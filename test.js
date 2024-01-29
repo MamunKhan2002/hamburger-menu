@@ -244,59 +244,92 @@ Ticket fare Calculator
 // }
 
 // =================================================================
-                    // Array
+// Array
 // =================================================================
-// First Task..........
+// // First Task..........
 
-const fruits = ['Apple', 'Mango', 'Banana', 'Orange', 'Water-lemon'];
-fruits[2] = 'Jambura';
-let fruits2 = fruits.indexOf('Mango');
+// const fruits = ['Apple', 'Mango', 'Banana', 'Orange', 'Water-lemon'];
+// fruits[2] = 'Jambura';
+// let fruits2 = fruits.indexOf('Mango');
 
-console.log(fruits[3]);
-console.log(fruits);
-console.log(fruits2);
-
-
-// ==Task Two ----------
-
-const touristDestinations = ['Bangladesh', 'India', 'Pakistan', 'England'];
-touristDestinations.push('Japan');
-console.log(touristDestinations);
-touristDestinations.push('China', 'Kushmir');
-console.log(touristDestinations);
-touristDestinations.pop('Kashmir');
-console.log(touristDestinations);
+// console.log(fruits[3]);
+// console.log(fruits);
+// console.log(fruits2);
 
 
-// ====Task Three===-----
-const books = ['Bangla', 'Hindi', 'Math', 'English', 'javascript'];
+// // ==Task Two ----------
 
-console.log(books.includes('javascript'));
-
-// ========Task Tour===------
-
-
-let points = [22, 3, 13, 53, 6, 1, 0, 63];
-
-const parsonName = ['Akash', 'Mamun', 'Modhu', 'Milon'];
-
-console.log(Array.isArray(points));
-console.log(Array.isArray(parsonName));
+// const touristDestinations = ['Bangladesh', 'India', 'Pakistan', 'England'];
+// touristDestinations.push('Japan');
+// console.log(touristDestinations);
+// touristDestinations.push('China', 'Kushmir');
+// console.log(touristDestinations);
+// touristDestinations.pop('Kashmir');
+// console.log(touristDestinations);
 
 
-// ======Task Five ==------
+// // ====Task Three===-----
+// const books = ['Bangla', 'Hindi', 'Math', 'English', 'javascript'];
 
-const arr1 = [3, 43, 5, 66, 77, 32, 97];
+// console.log(books.includes('javascript'));
 
-const myFriends = ['Milon', 'Akash', 'Modhu', 'Shawon'];
-
-const myFriendsGirl = ['Mitu', 'Mim', 'Sonia', 'Taniya'];
-
-const myAllFriends = myFriends.concat(myFriendsGirl, arr1);
-console.log(myAllFriends);
-console.log(arr1);
-console.log(myFriends);
-console.log(myFriendsGirl);
+// // ========Task Tour===------
 
 
+// let points = [22, 3, 13, 53, 6, 1, 0, 63];
 
+// const parsonName = ['Akash', 'Mamun', 'Modhu', 'Milon'];
+
+// console.log(Array.isArray(points));
+// console.log(Array.isArray(parsonName));
+
+
+// // ======Task Five ==------
+
+// const arr1 = [3, 43, 5, 66, 77, 32, 97];
+
+// const myFriends = ['Milon', 'Akash', 'Modhu', 'Shawon'];
+
+// const myFriendsGirl = ['Mitu', 'Mim', 'Sonia', 'Taniya'];
+
+// const myAllFriends = myFriends.concat(myFriendsGirl, arr1);
+// console.log(myAllFriends);
+// console.log(arr1);
+// console.log(myFriends);
+// console.log(myFriendsGirl);
+
+
+
+// ==========================================================
+
+/*
+BMI Calculator and Health Category
+
+Create a JavaScript program that calculates the Body Mass Index (BMI) and assigns a health category based on the BMI value. Use nested if-else statements to determine the health category.
+
+    - Calculate BMI using the formula: BMI = weight (kg) / (height (m))^2
+    - BMI < 18.5, you are underweight.
+    - BMI >= 18.5 and BMI <=24.9, you are normal.
+    - BMI >=25 and BMI <= 29.9, you are overweight.
+    - Otherwise, you are obese.
+
+ */
+
+let weight = 100;
+const height = 1.651 * 2;
+const BMI = weight / height;
+let value;
+
+if (BMI < 18.5) {
+    value = 'you are underweight.'
+} else {
+    if (BMI >= 18.5 && BMI <= 24.9) {
+        value = 'you are normal.'
+    } else if (BMI >= 25 && BMI <= 29.9) {
+        value = 'you are overweight.'
+    } else {
+        value = 'you are obese.'
+    }
+};
+
+console.log(value);
