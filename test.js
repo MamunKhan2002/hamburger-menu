@@ -374,3 +374,29 @@ if (hour <= 11 && hour >= 6) {
 };
 
 console.log(greeting);
+
+// ==================================================
+//  Switch 
+// ==================================================
+
+let day;
+switch (key) {
+    case 0:
+        day = 'Saturday'
+        break;
+    case 1:
+        day = 'Sunday'
+        break;
+    case 0:
+        day = 'Monday'
+        break;
+    case 0:
+        day = 'Sunday'
+        break;
+    case 0:
+        day = 'Sunday'
+        break;
+
+    default:
+        break;
+}
