@@ -19,4 +19,23 @@ if (subject.toUpperCase().trim() === book.toUpperCase().trim()) {
 
 let text = 'Count how many times a string has the letter';
 
+// console.log(text.split('').reverse().join(""));
+
+let sentence = 'I am good an hard working person';
+// console.log(sentence.split(' ').join('-'));
+
+let x = ['I', 'am', 'good', 'an', 'hard', 'working', 'person'];
+
+// console.log(x.join(' ').split(' '));
+
+
+let girl = ['Mim', 'Shorna', 'Bobita', 'Kobita'];
+
+let boys = ['Mamun', 'Shakib', 'Bipu', 'Akash'];
+
+let girlBoy = girl.concat(boys);
+
+// console.log(girlBoy.join(' ').split(' '));
+
+
 
