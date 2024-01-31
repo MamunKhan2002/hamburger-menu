@@ -7,7 +7,7 @@ for (const letter of sentence) {
 
     rev = letter + rev;
 }
-// console.log(rev);
+console.log(rev);
 
 // =========================
 // reverse  two
@@ -23,3 +23,5 @@ for (let i = 0; i < sentence.length; i++) {
 
 // reverse  three
 
+let reverseMore = sentence.split('').reverse().join('')
+console.log(reverseMore);
