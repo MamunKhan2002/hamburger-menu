@@ -14,3 +14,5 @@ console.log(personKeys);
 let personValues = Object.values(person)
 console.log("---Values---");
 console.log(personValues);
+
+console.log("---Iterate---");
