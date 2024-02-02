@@ -7,5 +7,5 @@ Output: 'person working hard a am I'*/
 
 const statement = 'I am a hard working person';
 
-let reverse = statement.split(" ").reverse().join(' ')
+let reverse = statement.split(" ").reverse().join(' ').
 console.log(reverse);
