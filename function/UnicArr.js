@@ -17,7 +17,8 @@ const uniqArray = uniqNames(names);
 
 // --------------------------------------------
 
-const numbers = [65, 66, 34, 43, 34, 65, 3, 5, 34];
+
+
 
 function uniqNumbers(value) {
     // console.log(value);
