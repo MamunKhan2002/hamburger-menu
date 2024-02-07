@@ -1,5 +1,4 @@
 function calculateMoney(ticketSale) {
-    // console.log(ticketSale);
     if (ticketSale <= 0) {
         return "Invalid Number";
     }
@@ -18,21 +17,25 @@ function calculateMoney(ticketSale) {
 
 // console.log(calculateMoney(1));
 
+
 function checkName(name) {
+    const nameCharacter = ["a", "y", "i", "e", "o", "u", "w"];
     if (typeof name !== "string") {
         return "invalid";
-    }
-    const letter = name.toLowerCase().slice(-1);
-    const nameCharacter = ["a", "y", "i", "e", "o", "u", "w"];
-    if (nameCharacter.includes(letter)) {
-        return "Good Name";
     } else {
-        return "Bad Name";
+        const letter = name.toLowerCase().slice(-1);
+        if (nameCharacter.includes(letter)) {
+            return "Good Name";
+        } else {
+            return "Bad Name";
+        }
     }
+
 
 }
 
-// console.log(checkName("RAFEE"));
+// console.log(checkName(199));
+
 
 function deleteInvalids(arrays) {
     if (!Array.isArray) {
@@ -49,6 +52,8 @@ function deleteInvalids(arrays) {
 
 // console.log(deleteInvalids([1, null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]));
 
+
+
 function password(obj) {
     const birthYearLen = obj.birthYear.toString().length;
     const objKeysLen = Object.keys(obj).length;
@@ -61,7 +66,34 @@ function password(obj) {
     }
 }
 
-
 // console.log(password({ name: "rahat", birthYear: 2002 }));
 
 
+
+function monthlySavings(arr, livingCost) {
+    const payment = 3000;
+    let totalPayment = 0;
+    if (!Array.isArray(arr)) {
+        const text = "invalid input";
+        return text;
+    } else {
+        for (const value of arr) {
+            if (value >= payment) {
+                const withoutTax = value * 20 / 100;
+                const result = value - withoutTax;
+                totalPayment += result;
+            } else {
+                totalPayment += value
+            }
+        }
+    }
+    const totalSavings = totalPayment - livingCost;
+    if (totalSavings < 0) {
+        const text = "earn more";
+        return text;
+    } else {
+        return totalSavings;
+    }
+}
+
+// console.log(monthlySavings(100, [900, 2700, 3400]));
