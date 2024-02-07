@@ -15,8 +15,6 @@ function calculateMoney(ticketSale) {
     return totalSave;
 }
 
-// console.log(calculateMoney(1));
-
 
 function checkName(name) {
     const nameCharacter = ["a", "y", "i", "e", "o", "u", "w"];
@@ -30,15 +28,12 @@ function checkName(name) {
             return "Bad Name";
         }
     }
-
-
 }
 
-// console.log(checkName(199));
 
 
 function deleteInvalids(arrays) {
-    if (!Array.isArray) {
+    if (!Array.isArray(arrays)) {
         return "Invalid Array";
     }
     let resultArr = [];
@@ -50,7 +45,6 @@ function deleteInvalids(arrays) {
     return resultArr;
 }
 
-// console.log(deleteInvalids([1, null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }]));
 
 
 
@@ -65,8 +59,6 @@ function password(obj) {
         return `${capitalizedName}#${obj.name}@${obj.birthYear}`;
     }
 }
-
-// console.log(password({ name: "rahat", birthYear: 2002 }));
 
 
 
@@ -95,5 +87,3 @@ function monthlySavings(arr, livingCost) {
         return totalSavings;
     }
 }
-
-// console.log(monthlySavings(100, [900, 2700, 3400]));
