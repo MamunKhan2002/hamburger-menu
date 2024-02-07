@@ -1,5 +1,9 @@
 function totalPicnicCost(Quantity) {
     // console.log(Quantity);
+    if (Quantity !== "number") {
+        const text = 'Please provide valid number';
+        return text;
+    }
     const first100PerFee = 5000;
     const sec101To200PerFee = 4000;
     const above200PerFee = 3000;
@@ -22,5 +26,5 @@ function totalPicnicCost(Quantity) {
         return remainTotalFee;
     }
 }
-const totalCost = totalPicnicCost(201);
+const totalCost = totalPicnicCost('202');
 console.log(totalCost);
