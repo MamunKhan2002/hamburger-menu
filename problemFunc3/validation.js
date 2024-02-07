@@ -11,5 +11,5 @@ function getPersonDetails(info) {
     return `My name is ${info.name} and I am ${info.age} years old.`
 }
 
-const personDetails = getPersonDetails( [name: '55', age: 34] );
+const personDetails = getPersonDetails([]);
 console.log(personDetails);

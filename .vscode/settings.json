@@ -1,3 +1,6 @@
 {
-    "material-icon-theme.activeIconPack": "angular"
+    "material-icon-theme.activeIconPack": "angular",
+    "editor.cursorSurroundingLines": 0,
+    "editor.find.cursorMoveOnType": true,
+    "editor.fontSize": 20
 }
