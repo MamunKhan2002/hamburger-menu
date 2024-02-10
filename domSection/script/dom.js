@@ -46,3 +46,26 @@ middle.previousElementSibling.style.fontSize = '25px';
 middle.previousElementSibling.style.color = 'green';
 
 // ul.removeChild()
+
+
+let ul_list = document.getElementsByClassName('ul_list');
+// console.log(ul_list);
+
+// ul_list.
+
+// let liList = document.getElementsByTagName('li');
+
+let sections = document.getElementsByClassName('sec1');
+for (let section of sections) {
+    // console.log(section);
+    section.style.backgroundColor = "lightgrey";
+    section.style.padding= '5px';
+    section.style.marginBottom='10px';
+    section.style.borderRadius="15px";
+    section.style.width='200px'
+    section.classList.add('name');
+    section.classList.add('secClass');
+}
+
+sections.style.color="green"
+
