@@ -7,7 +7,6 @@ function calculateMoney(ticketSale) {
     const gatemanCosts = 500;
     const perStaffLunchCost = 50;
     const totalStaff = 8;
-
     const totalTicketCost = ticketSale * perTicketPrice;
     const totalStaffLunchCost = totalStaff * perStaffLunchCost;
     const gatemanCostsOrTotalStaffLunchCost = gatemanCosts + totalStaffLunchCost;
