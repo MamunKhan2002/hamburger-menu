@@ -1,36 +1,48 @@
-const liCollection = document.getElementsByTagName("li");
-// console.log(liCollection);
-for (const li of liCollection) {
-    // console.log(li.innerText);
-}
+const main = document.querySelector('main');
 
-const allHeading = document.getElementsByTagName("h1");
+const section = document.createElement('section');
+main.appendChild(section);
+
+const div = document.createElement('div');
+section.appendChild(div);
+
+const ul = document.createElement('ul');
+div.appendChild(ul);
+ul.style.listStyle = "none";
+ul.style.display = 'flex';
+ul.style.gap = '20px';
+ul.style.alignItems = 'center';
 
 
-const secTitle = document.getElementById('section-title1');
-secTitle.innerText = 'Dom is changings';
-secTitle.style.color = "pink";
+const li1 = document.createElement('li');
+li1.innerText = 'Home';
+ul.appendChild(li1);
 
-const li = document.createElement("li");
-li.innerText = 'About';
-const ul = document.getElementById("ul-list");
-ul.appendChild(li);
-
-const li2 = document.createElement("li");
-li2.innerText = 'About';
+const li2 = document.createElement('li');
+li2.innerText = 'Skill';
 ul.appendChild(li2);
 
-const li3 = document.createElement("li");
-li3.innerText = 'About';
-ul.appendChild(li3)
+const li3 = document.createElement('li');
+li3.innerText = 'Tutorials';
+li3.id = 'middle';
+ul.appendChild(li3);
 
-const li4 = document.createElement("li");
+const li4 = document.createElement('li');
 li4.innerText = 'About';
-ul.appendChild(li4)
+ul.appendChild(li4);
 
-const li5 = document.createElement("li");
-li5.innerText = 'About';
-ul.appendChild(li5)
+const li5 = document.createElement('li');
+li5.innerText = 'Contact';
+ul.appendChild(li5);
 
-console.log(ul.parentNode);
+const middle = document.querySelector('#middle');
 
+middle.style.color = 'red';
+middle.style.fontSize = "40px";
+
+middle.nextElementSibling.style.fontSize = "30px";
+middle.nextElementSibling.style.color = 'blue';
+middle.previousElementSibling.style.fontSize = '25px';
+middle.previousElementSibling.style.color = 'green';
+
+// ul.removeChild()
