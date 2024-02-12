@@ -1,20 +1,16 @@
-// const items = document.getElementsByClassName("item");
-
-// for (const item of items) {
-//     item.addEventListener("click", function (event) {
-//         item.parentNode.removeChild(event.target)
-//     })
-// }
-
-document.getElementById("ul-list").addEventListener("click", function (event) {
-    //    console.log(event.target);
-    event.target.parentNode.removeChild(event.target)
+const textBox = document.getElementById("text-box");
+document.getElementById("btn-delete").addEventListener("click", function (event) {
+    const headTitle = document.getElementById("title-text");
+    headTitle.style.display = "none";
+    textBox.value = "";
 })
 
-document.getElementById("btn-post").addEventListener("click", function () {
-    const li = document.createElement("li");
-    const ulList = document.getElementById("ul-list");
-    li.innerText = "How are you?";
-    ulList.appendChild(li);
-    li.classList.add("item")
+document.getElementById("text-box").addEventListener("keyup", function (event) {
+    const btnDelete = document.getElementById("btn-delete");
+    const textBoxValue = event.target.value;
+    if (textBoxValue === "delete") {
+        btnDelete.removeAttribute("disabled")
+    } else {
+        btnDelete.setAttribute("disabled", true)
+    }
 })

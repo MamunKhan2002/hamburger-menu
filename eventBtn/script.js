@@ -21,7 +21,7 @@ document.getElementById("input-text").addEventListener("keyup", function (even) 
     const deleteText = document.getElementById("delete-text");
     if (inputTextValue === "delete") {
         deleteText.removeAttribute("disabled");
-    }else{
+    } else {
         deleteText.setAttribute("disabled", true);
     }
 })
