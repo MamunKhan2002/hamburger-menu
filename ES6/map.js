@@ -25,6 +25,8 @@
 
 // console.log(findResult);
 
+// ======================
+
 // const instructor = [
 //     { name: 'Nodi', age: 28, position: 'Senior' },
 //     { name: 'Akil', age: 26, position: 'Junior' },
@@ -34,3 +36,51 @@
 // const insResult = instructor.filter(p => p.position === "Senior");
 
 // console.log(insResult);
+
+const people = [
+    { name: "Meena", age: 20 },
+    { name: "rina", age: 15 },
+    { name: "Suchorita", age: 22 }
+];
+
+
+const peopleResult2 = people.map(p => p.age + 1)
+
+// let sum = 0;
+// function sumOfAge(obj) {
+//     for (const x of obj) {
+//         const age = x.age;
+//         sum += age;
+//     }
+//     return sum;
+// }
+
+// const result = sumOfAge(people)
+
+// console.log(result);
+
+
+// const peopleResult = people.reduce((p, c) => p + c.age, 0);
+
+// console.log(peopleResult);
+
+const a = [1, 2, 3, 4, 5];
+// while (a.length > 0) {
+//     a.pop();
+// } 
+
+// a.splice(0, a.length);
+
+// console.log(a);
+
+
+const person = {
+    name: "Sumit",
+    age: 34
+}
+
+const details = ({name, age}) => `${name} ${age}`;
+
+const personDetails =  details(person);
+
+console.log(personDetails);
