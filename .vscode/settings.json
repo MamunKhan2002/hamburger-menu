@@ -2,5 +2,8 @@
     "material-icon-theme.activeIconPack": "angular",
     "editor.cursorSurroundingLines": 0,
     "editor.find.cursorMoveOnType": true,
-    "editor.fontSize": 20
+    "editor.fontSize": 20,
+    "screencastMode.mouseIndicatorSize": 20,
+    "workbench.sash.size": 4,
+    "workbench.editor.preventPinnedEditorClose": "keyboardAndMouse"
 }

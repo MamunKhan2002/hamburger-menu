@@ -74,13 +74,13 @@ const a = [1, 2, 3, 4, 5];
 // console.log(a);
 
 
-const person = {
-    name: "Sumit",
-    age: 34
-}
+// const person = {
+//     name: "Sumit",
+//     age: 34
+// }
 
-const details = ({name, age}) => `${name} ${age}`;
+// const details = ({name, age}) => `${name} ${age}`;
 
-const personDetails =  details(person);
+// const personDetails =  details(person);
 
-console.log(personDetails);
+// console.log(personDetails);
