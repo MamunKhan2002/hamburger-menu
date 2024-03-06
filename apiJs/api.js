@@ -14,3 +14,17 @@
 
 // const shopBoj = JSON.parse(shopJSON);
 // console.log(shopBoj);
+
+
+
+const user = {
+    id: 5,
+    name: "Gorid Amir",
+    job:'Actor'
+}
+
+const userJSON = JSON.stringify(user);
+
+console.log(userJSON);
+
+// {"id":5,"name":"Gorid Amir","job":"Actor"}
